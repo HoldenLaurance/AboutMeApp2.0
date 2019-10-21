@@ -4,30 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             Title=""
+             Title="My Bio App"
              x:Class="AboutMeApp.MainPage"
              BackgroundColor="White"
              >
 
-    <StackLayout>
-        <!--<Button
-            Text="About Me"
-            BackgroundColor="Cyan"
-            TextColor="Black"
-            Clicked="AboutMeButton_Clicked"></Button>
-        <Button
-            BackgroundColor="LightGreen"
-            WidthRequest="50"
-            HeightRequest="50"
-            Clicked="ContactButton_Clicked"></Button>
-        <Button
-            Text="About Me"
-            BackgroundColor="White"
-            Clicked="SkillsButton_Clicked"></Button>--> 
+    <StackLayout
+        Spacing="15">
+        
         <Frame BackgroundColor="Cyan"
                Margin="20"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand">
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="300">
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="AboutMeButton_Clicked"/>
             </Frame.GestureRecognizers>
@@ -50,8 +39,9 @@
        
         <Frame BackgroundColor="Cyan"
                Margin="20"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand">
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="300">
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="SkillsButton_Clicked"></TapGestureRecognizer>
             </Frame.GestureRecognizers>
@@ -72,8 +62,9 @@
         </Frame>
         <Frame BackgroundColor="Cyan"
                Margin="20"
-               HorizontalOptions="CenterAndExpand"
-               VerticalOptions="CenterAndExpand">
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               WidthRequest="300">
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="ContactButton_Clicked"></TapGestureRecognizer>
             </Frame.GestureRecognizers>

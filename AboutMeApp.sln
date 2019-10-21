@@ -9,14 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMeApp.Android", "About
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMeApp.iOS", "AboutMeApp\AboutMeApp.iOS\AboutMeApp.iOS.csproj", "{82A80DEA-A471-412B-801F-74E7A6BD0247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutMeApp", "AboutMeApp\AboutMeApp\AboutMeApp.csproj", "{F263911D-B5F5-4994-B0FF-24A7067B7291}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AboutMeApp", "AboutMeApp\AboutMeApp\AboutMeApp.csproj", "{F263911D-B5F5-4994-B0FF-24A7067B7291}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{01E45D92-ACC5-48C7-AAA2-5196F9B68254}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\ContactImage.png = ..\..\..\Desktop\ContactImage.png
-		..\..\..\Desktop\ProfileImage.png = ..\..\..\Desktop\ProfileImage.png
-		..\..\..\Desktop\SkillsImage.png = ..\..\..\Desktop\SkillsImage.png
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

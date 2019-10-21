@@ -6,10 +6,36 @@
              mc:Ignorable="d"
              x:Class="AboutMeApp.ContactPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Spacing="40">
+            <StackLayout>
+                <Label  TextColor="Black"
+                        FontSize="32"
+                        Margin="25"
+                        Text="Contact"
+                        HorizontalOptions="Center"/>
+            </StackLayout>
+            <Entry Placeholder="Name"
+                   x:Name="nameEntry"/>
+            <Entry Placeholder="Email"
+                   x:Name="emailEntry"/>
+            <Entry Placeholder="Phone Number"
+                   x:Name="phoneEntry"/>
+            <Entry Placeholder="Questions"
+                   x:Name="questionEntry"/>
+
+            <Button 
+                Text="Submit"
+                FontSize="24"
+                FontAttributes="Bold"
+                TextColor="Black"
+                BackgroundColor="LightGreen"
+                Clicked="Button_Clicked"
+                WidthRequest="100"
+                HorizontalOptions="Center">
+                
+                
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

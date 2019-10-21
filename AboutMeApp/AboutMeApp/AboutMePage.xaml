@@ -6,10 +6,15 @@
              mc:Ignorable="d"
              x:Class="AboutMeApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="30" Spacing="15">
+            <Label Text="Holden Laurance"
+                   FontAttributes="Bold"
+                   FontSize="32"
+                   HorizontalOptions="Center"/>
+                <Label Text="sadasdsadas"
+                       HorizontalOptions="Center"></Label>
+             </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
