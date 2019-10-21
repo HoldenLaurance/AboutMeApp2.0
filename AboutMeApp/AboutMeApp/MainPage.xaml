@@ -4,13 +4,95 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AboutMeApp.MainPage">
+             Title=""
+             x:Class="AboutMeApp.MainPage"
+             BackgroundColor="White"
+             >
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <!--<Button
+            Text="About Me"
+            BackgroundColor="Cyan"
+            TextColor="Black"
+            Clicked="AboutMeButton_Clicked"></Button>
+        <Button
+            BackgroundColor="LightGreen"
+            WidthRequest="50"
+            HeightRequest="50"
+            Clicked="ContactButton_Clicked"></Button>
+        <Button
+            Text="About Me"
+            BackgroundColor="White"
+            Clicked="SkillsButton_Clicked"></Button>--> 
+        <Frame BackgroundColor="Cyan"
+               Margin="20"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="AboutMeButton_Clicked"/>
+            </Frame.GestureRecognizers>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Image
+                HeightRequest="50"
+                WidthRequest="50"
+                Source="profileimage.png"
+                />
+                <Label Text="About Me"
+                       FontSize="36"
+                       TextColor="Purple"
+                       VerticalTextAlignment="Center"
+                       Margin="50,0,0,0"/>
+            </StackLayout>
+
+        </Frame>
+       
+        <Frame BackgroundColor="Cyan"
+               Margin="20"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="SkillsButton_Clicked"></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+            <StackLayout Orientation="Horizontal">
+                <Image
+                HeightRequest="50"
+                WidthRequest="50"
+                Source="skillsimage.png"
+
+                />
+                <Label Text="Skills"
+                       FontSize="36"
+                       TextColor="ForestGreen"
+                       VerticalTextAlignment="Center"
+                       Margin="50,0,0,0"/>
+            </StackLayout>
+            
+        </Frame>
+        <Frame BackgroundColor="Cyan"
+               Margin="20"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="ContactButton_Clicked"></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+
+            <StackLayout Orientation="Horizontal">
+                <Image
+                HeightRequest="50"
+                WidthRequest="50"
+                Source="contactimage.png"
+
+                />
+                <Label Text="Contact"
+                       FontSize="36"
+                       TextColor="Red"
+                       VerticalTextAlignment="Center"
+                       Margin="50,0,0,0"/>
+            </StackLayout>
+
+        </Frame>
     </StackLayout>
 
 </ContentPage>

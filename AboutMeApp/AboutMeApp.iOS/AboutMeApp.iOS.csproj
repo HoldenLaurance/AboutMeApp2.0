@@ -130,4 +130,13 @@
       <Name>AboutMeApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\profileimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\skillsimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\contactimage.png" />
+  </ItemGroup>
 </Project>

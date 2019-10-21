@@ -17,5 +17,30 @@ namespace AboutMeApp
         {
             InitializeComponent();
         }
+
+        private void ImageButton_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutMeButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutMePage());
+        }
+
+        private void SkillsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
+
+        private void ContactButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
+        }
     }
 }
