@@ -22,19 +22,22 @@ namespace AboutMeApp
             if (nameEntry.Text=="" || nameEntry.Text == null)
             {
                 await DisplayAlert(title: "Error!", message: "Please enter your name", cancel: "OK");
+                return;
             }
             if (emailEntry.Text == "" || emailEntry.Text == null)
             {
                 await DisplayAlert(title: "Error!", message: "Please enter your email", cancel: "OK");
+                return;
             }
             if (questionEntry.Text == "" || questionEntry.Text == null)
             {
                 await DisplayAlert(title: "Error!", message: "Please enter your question", cancel: "OK");
+                return;
             }
 
             await DisplayAlert(title: "Thanks!",message:"Your message was sent", cancel:"OK" );
 
-            await Navigation.PopAsync();
+            Navigation.PopAsync();
         }
     }
 }

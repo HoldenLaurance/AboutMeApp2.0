@@ -4,16 +4,27 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AboutMeApp.AboutMePage">
+             x:Class="AboutMeApp.AboutMePage"
+             BackgroundColor="LightGray">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="30" Spacing="15">
             <Label Text="Holden Laurance"
                    FontAttributes="Bold"
                    FontSize="32"
-                   HorizontalOptions="Center"/>
-                <Label Text="sadasdsadas"
-                       HorizontalOptions="Center"></Label>
+                   TextColor="Purple"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"/>
+                <Label Text="sadasdsadas"                      
+                       BackgroundColor="White"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Start" 
+                       MinimumWidthRequest="400"
+                       HeightRequest="525"
+                       FontSize="18"
+                       VerticalTextAlignment="Start">
+                       
+                </Label>
              </StackLayout>
         </ScrollView>
     </ContentPage.Content>

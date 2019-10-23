@@ -4,12 +4,22 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="AboutMeApp.SkillsPage">
+             x:Class="AboutMeApp.SkillsPage"
+             BackgroundColor="LightGray">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Skills Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="10">
+            <Entry x:Name="newSkillEntry" Placeholder="Enter a skill">
+                
+            </Entry>
+            <ListView x:Name="skillsList"
+                      BackgroundColor="White">
+
+            </ListView>
+            <Button Clicked="Button_Clicked"
+                    Text="Add a skill"
+                    BackgroundColor="Coral"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
