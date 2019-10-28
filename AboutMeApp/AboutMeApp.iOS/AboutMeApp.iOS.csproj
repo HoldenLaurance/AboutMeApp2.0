@@ -139,4 +139,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\contactimage.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\myFacePic.jpg" />
+  </ItemGroup>
 </Project>

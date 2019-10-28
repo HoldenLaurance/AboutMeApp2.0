@@ -8,12 +8,17 @@
              Title="About Me">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout Margin="30" Spacing="15">
+            <StackLayout Margin="30" Spacing="25">
             <Label Text="About Me"                   
                    FontSize="48"
                    TextColor="Purple"
                    HorizontalOptions="Center"
                    BackgroundColor="White"/>
+                <Image
+                    Source="myFacePic.jpg"
+                    HeightRequest="200"
+                    WidthRequest="150">                    
+                </Image>
                 <Label Text="My name is Holden Laurance, I am currently a senior at Pittsburg State University, about to graduate in December with a degree in Computer Information Systems. I have a wife and a 10 month-old son. I primarily spend my time playing with my son, working or learning code online. When I am lucky enough to have some time to myself I like to read books and play online games. "                      
                        BackgroundColor="White"
                        VerticalOptions="StartAndExpand"
