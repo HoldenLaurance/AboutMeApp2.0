@@ -7,19 +7,41 @@
              x:Class="AboutMeApp.SkillsPage"
              Title="Skills">
     <ContentPage.Content>
-        <StackLayout
+        <StackLayout> 
+            <StackLayout
             Margin="10">
-            <Entry x:Name="newSkillEntry" Placeholder="Enter a skill">
-                
-            </Entry>
-            <ListView x:Name="skillsList"
-                      BackgroundColor="White">
 
-            </ListView>
-            <Button Clicked="Button_Clicked"
-                    Text="Add a skill"
-                    BackgroundColor="Coral"/>
+                <ListView x:Name="skillsList"
+                      BackgroundColor="White"
+                      HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout
+                                    Orientation="Vertical"                                    >
+                                    <StackLayout Orientation="Horizontal"
+                                             HorizontalOptions="Center"
+                                             Margin="25">
+                                    <Label Text="{Binding Name}"
+                                           HorizontalTextAlignment="Center"
+                                           VerticalOptions="Center"
+                                           FontSize="24"
+                                           TextColor="Black"/>
+                                    <Image Source="{Binding Icon}"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           HorizontalOptions="End"
+                                           Margin="0,0,30,0"/>
+
+                                </StackLayout>
+                            </StackLayout>
+                             </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             
+            
+             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -13,24 +13,33 @@ namespace AboutMeApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SkillsPage : ContentPage
     {
-        public ObservableCollection<string> Skills{ get; set;}
+
+        public ObservableCollection<skillItem> Skills{ get; set; }
         public SkillsPage()
         {
             InitializeComponent();
 
-            this.Skills = new ObservableCollection<string>();
+            this.Skills = new ObservableCollection<skillItem>();
 
-            Skills.Add(item: "Driving");
-            Skills.Add(item: "Changing Diapers");
+            skillItem drivingSkill = new skillItem();
+            drivingSkill.Name= "Driving";
+            drivingSkill.Icon= "";
+
+            skillItem readingSkill = new skillItem();
+            readingSkill.Name = "Reading";
+            readingSkill.Icon = "";
+
+            skillItem catSkill = new skillItem();
+            catSkill.Name = "Loving Cats";
+            catSkill.Icon = "";
+
+            Skills.Add(drivingSkill);
+            Skills.Add(readingSkill);
+            Skills.Add(catSkill);
 
             skillsList.ItemsSource = this.Skills;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            this.Skills.Add(newSkillEntry.Text);
-            skillsList.ItemsSource = this.Skills;
-            newSkillEntry.Text = "";
-        }
+        
     }
 }
