@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              Title="My Bio App"
              x:Class="AboutMeApp.MainPage"
-             BackgroundColor="LightGray"
+             
              >
 
     <StackLayout
@@ -76,7 +76,7 @@
                 Source="contactimage.png"
 
                 />
-                <Label Text="Contact"
+                <Label Text="Contact Me"
                        FontSize="36"
                        TextColor="Crimson"
                        VerticalTextAlignment="Center"

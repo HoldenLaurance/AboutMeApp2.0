@@ -31,11 +31,11 @@ namespace AboutMeApp
             }
             if (questionEntry.Text == "" || questionEntry.Text == null)
             {
-                await DisplayAlert(title: "Error!", message: "Please enter your question", cancel: "OK");
+                await DisplayAlert(title: "Error!", message: "Please enter your reason", cancel: "OK");
                 return;
             }
 
-            await DisplayAlert(title: "Thanks!",message:"Your message was sent", cancel:"OK" );
+            await DisplayAlert(title: "Thanks for Submitting!",message:"Your message was sent, I'll get back to you as soon as I can.", cancel:"Close" );
 
             Navigation.PopAsync();
         }

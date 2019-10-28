@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="AboutMeApp.ContactPage"
-             BackgroundColor="LightGray">
+             Title="Contact Me">
     <ContentPage.Content>
         <StackLayout
             Spacing="40">
@@ -19,16 +19,16 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="White"/>
             </StackLayout>
-            <Entry Placeholder="Name"
+            <Entry Placeholder="Enter your Name"
                    x:Name="nameEntry"
                    Margin="10,0,10,0"/>
-            <Entry Placeholder="Email"
+            <Entry Placeholder="Your Email Address"
                    x:Name="emailEntry"
                    Margin="10,0,10,0"/>
             <Entry Placeholder="Phone Number"
                    x:Name="phoneEntry"
                    Margin="10,0,10,0"/>
-            <Entry Placeholder="Questions"
+            <Entry Placeholder="Reason for Contact"
                    x:Name="questionEntry"
                    Margin="10,0,10,0"/>
 
@@ -37,8 +37,8 @@
                 Text="Submit"
                 FontSize="24"
                 FontAttributes="Bold"
-                TextColor="Black"
-                BackgroundColor="LightGreen"
+                TextColor="Crimson"
+                BackgroundColor="#92CBC5"
                 Clicked="Button_Clicked"
                 WidthRequest="100"
                 HorizontalOptions="Center">
