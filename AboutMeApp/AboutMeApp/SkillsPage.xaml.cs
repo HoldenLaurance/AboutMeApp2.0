@@ -33,9 +33,19 @@ namespace AboutMeApp
             catSkill.Name = "Loving Cats";
             catSkill.Icon = "";
 
+            skillItem typingSkill = new skillItem();
+            typingSkill.Name = "Typing";
+            typingSkill.Icon = "";
+
+            skillItem cookingSkill = new skillItem();
+            cookingSkill.Name = "Cooking";
+            cookingSkill.Icon = "";
+
             Skills.Add(drivingSkill);
             Skills.Add(readingSkill);
             Skills.Add(catSkill);
+            Skills.Add(typingSkill);
+            Skills.Add(cookingSkill);
 
             skillsList.ItemsSource = this.Skills;
         }
